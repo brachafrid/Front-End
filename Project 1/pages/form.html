@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/styleform.css">
+    <title>foodly home</title>
+</head>
+<body dir="rtl">
+    <div class=contain>
+        <header>
+            <nav>
+                <a href="../pages/index.html" >בית</a>
+                <a href="../pages/recipe.html">מתכונים</a>
+                <a href="../pages/tips.html">טיפים</a>
+                <a href="../pages/form.html" id=navA> ליצירת קשר</a>
+                <a href="../pages/video.html">סרטוני הדרכה</a>
+                <img src="../img/logo1.png" alt="f">
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h2>הרשמה</h2>
+                <form action="../pages/arsama.html" >
+                    <input type="text" name="name" placeholder="שם" class="form"  required pattern="[a-z A-Z]+"><br>
+                    <input type="text" name="family" placeholder="משפחה" class="form" required pattern="[a-z A-Z]+"><br>
+                    <input type="text" name="email" placeholder="אמייל" class="form" required pattern="[a-z A-Z 0-9 @ .]+"><br>
+                    <input type="submit" value="הרשמה" >
+                </form>
+            </div>
+            <div>
+                <h2>חשוב לנו לשמוע אותך</h2>
+                <form action="maashov.html">
+                    <label for="recipe">   המתכון האהוב עליך:</label>
+                    <br>
+                    <input list="recipe"  name="recipe" required class="form">
+                    <datalist id = "recipe" >
+                        <option value="חזה עוף עם פטריות"></option>
+                        <option value="מרק עגבניות וגריסים"></option>
+                        <option value="עוף בתיבול פיקנטי"></option>
+                        <option value="פטריות ממולאות בגבינות"></option>
+                        <option value="פרגיות בצילי ודבש"></option>
+                        <option value="פשטידת תפוא ופטריות"></option>
+                        <option value="קוגל ירושלמי"></option>
+                        <option value="תפוא מבושלים עם פטריות ובצל"></option>
+                    </datalist>
+                
+                
+                    <h2>למה תרצה שנוסיף מתכונים?</h2>
+                    <input type="radio" name="gender" value="male" class="link"> מנות עקריות<br>
+                    <input type="radio" name="gender" value="female" class="link"> תוספות<br>
+                    <input type="radio" name="gender" value="other" class="link"> מנות אחרונות<br>
+                    <input type="radio" name="gender" value="other" class="link"> עוגות<br><br>
+                    <input type="submit" value="שליחה" > 
+                </form> 
+            </div>
+            <div>
+                <form action="matcon.html">
+                        <h2>להוספת המתכון שלך למאגר המתכונים שלנו:</h2>
+                        <label for="recipe">מצרכים:</label><br>
+                    <textarea name="recipe" cols="70" rows="10" class="rec" required> </textarea><br>
+                    <label for="preprion">אופן ההכנה:</label><br>
+                    <textarea name="preprion" cols="70" rows="15" class="rec" required> </textarea>
+                    <input type="submit" value="שליחה" > 
+                </form> 
+            </div>  
+           
+        </main>
+        <aside>
+            <h4>פינטיפ!</h4>
+            <p>ביצה קרה קלה יותר להפרדה</p>
+            <P>לניקוי קרש החיתוך שפשפי במיץ לימון</P>
+        </aside>
+        <footer>
+            <p> @FOODLY כל הזכויות שמורות: אין להעתיק, להדפיס ,ולהפיץ. </p>
+        </footer>
+
+    </div>
+</body>
+</html>
