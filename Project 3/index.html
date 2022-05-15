@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="spa.css">  
+    <link rel="stylesheet" href="style.css">     
+    <title>Document</title>
+</head>
+
+<body  >
+    <!--  logIn  -->
+    <div id="logIn" class="page active">
+        <li><a href="#" data-target="signUp" class="nav-link">sign-up</a></li>
+        <li><a href="#" data-target="logInPrinciple" class="nav-link">log-in-as-principle</a></li>
+        <form action="" onsubmit='logIn(event)'>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required><br>
+        
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required><br>
+        
+                <input type="submit"  value="connect"> 
+        </form>
+
+
+    </div>
+    <!--  signUp  -->
+    <div id="signUp" class="page">
+        <li><a href="#" data-target="logIn" class="nav-link">log-in</a></li>
+        <li><a href="#" data-target="logInPrinciple" class="nav-link">log-in-as-principle</a></li>
+        <form action="" onsubmit="signUp(event)">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="name" required><br>
+        
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="courses@gmail.com" name="email" required><br>
+        
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="0551111111" name="phone" required><br>
+        
+                <label for="adress"><b>Adress</b></label>
+                <input type="text" placeholder="street" name="adress" required><br>
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required><br>
+        
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="passwordReapet" required><br>
+        
+                <input type="submit"  value="connect">
+        </form>
+    </div>
+
+    <!--  logInPrinciple  -->
+    <div id="logInPrinciple" class="page ">
+        <li><a href="#" data-target="signUp" class="nav-link">sign-up</a></li>
+        <li><a href="#" data-target="logIn" class="nav-link">log-in</a></li>
+        <form action="" onsubmit="logInPrinciple(event)">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+                <label for="cd"><b>code</b></label>
+                <input type="code" placeholder="Enter code" name="cd" required><br>
+        
+                <input type="submit" value="connect">
+        </form>
+    </div>
+
+    <!--  application  -->
+    <div id="application" class="page">
+        <li><a href="#" data-target="logOut" class="nav-link" onclick="logOut()">log-out</a></li>
+        <div>Hellow mis/mr</div>
+        <div id="current"></div>
+        <div id="contacts">
+            <button id="familyCourses" onclick="getChildren()">show me my children courses</button><br>
+            <button id="childCourses" onclick="getCourseOfKid()" >show me courses of one child</button><br>
+            <button id="feeMonth" onclick="getMyFee()">show me how much I pay for month</button><br>
+            <button id="addChild" onclick="creatChild()">add a new child</button><br>
+            <button id="addCourse" onclick="newCourse()">add a new <B>course</B></button><br>
+            <button id="delete">take out a child from a course</button><br>
+
+            <div id="ans"></div>
+
+        </div>
+    </div>
+
+
+    <!--  applicationPrinciple  -->
+    <div id="applicationPrinciple" class="page">
+        <li><a href="#" data-target="logOut" class="nav-linK" onclick="logOut()">log-out</a></li>
+        <div id="contacts">
+            <span id="families">list families</span><br>
+            <span id="feeFamilies">list fee of families</span><br>
+            <span id="sumForMonth">sum for month</span><br>
+        </div>
+    </div>
+    <script src="spa.js"></script> 
+    <script src="DB API.js"></script>
+    <script src="rest API.js"></script>
+    <script src="FAJAX.js"></script>
+    <script src="script.js"></script>  
+    <script src="register.js"></script>  
+    <script src="myScript.js"></script>
+</body>
+
+</html>
