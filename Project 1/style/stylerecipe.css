@@ -1,0 +1,64 @@
+main > nav > a{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+   color: black;
+   text-decoration-line: none;
+  font-size: xx-large;
+  margin-right: 5%;
+  margin-left: 7%;
+ 
+}
+main > nav{
+    margin-top: 8%;
+}
+main > nav > a:hover{
+    color: #c44e80;
+}
+
+.img{
+    display: flex;
+}
+
+
+a>img{
+    flex: 1;
+    width:90%;
+}
+
+
+h1{
+    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+    text-align: center;
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 768px){
+  
+    .img{
+        display: flex;
+        flex-wrap: wrap;
+       margin: auto;
+    }
+    
+    
+    a>img{
+        flex: 1;
+        width:100%;
+        margin: 1%;
+       
+    }
+    
+    main > nav > a{
+        font-size: xx-large;
+        margin-left: 2%;
+        margin-right: 2%;
+   
+    }
+    main > nav{
+        margin-top:1%;
+        
+    }
+
+}
+
+
+   
