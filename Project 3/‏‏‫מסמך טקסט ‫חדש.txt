@@ -1,0 +1,30 @@
+function getPrice(input) {
+    switch (input) {
+        case "Backing":
+            return 100;
+            break;
+
+        case "Dancing":
+            return 150;
+            break;
+
+        case "Singing":
+            return 90;
+            break;
+
+        case "jumping":
+            return 100;
+            break;
+
+        case "swiming":
+            return 200;
+            break;
+
+        case "drawing":
+            return 120;
+            break;
+        default:
+            return 0;
+            break;
+    }
+}

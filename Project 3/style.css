@@ -1,0 +1,34 @@
+html{
+
+  background: url("XAAB7474.JPG"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+body{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(119, 119, 119);
+    /* background: linear-gradient(rgb(224, 224, 224), rgb(247, 171, 194)); */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin: 15%; */
+    margin-left: 30%;
+    margin-right: 30%;
+    overflow: hidden;
+	background-attachment: fixed;
+    font-family: cursive;
+}
+button{
+    height:50px;
+    margin:10px;
+    width: 200px;
+}
+.childButton{
+    background:lightcoral;
+}
